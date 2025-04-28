@@ -10,7 +10,7 @@ This project aims to build a machine learning model to predict the fare amount f
 - Dataset: NYC Taxi Fare Prediction dataset.
 - Tech Stack: Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn (sklearn)
 
---
+---
 
 ## 🔥 Key Steps Performed
 
