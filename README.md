@@ -1,54 +1,52 @@
-Cab Fare Prediction
+# Cab Fare Prediction
+
 This project aims to build a machine learning model to predict the fare amount for taxi rides in New York City based on factors like distance, pickup and drop-off location, and time of travel.
 
-📋 Project Overview
-Goal: Predict the taxi fare amount given pickup and drop-off information.
+---
 
-Dataset: NYC Taxi Fare Prediction dataset.
+## 📋 Project Overview
 
-Tech Stack:
+- Goal: Predict the taxi fare amount given pickup and drop-off information.
+- Dataset: NYC Taxi Fare Prediction dataset.
+- Tech Stack: Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn (sklearn)
 
-Python
+--
 
-Pandas, NumPy
+## 🔥 Key Steps Performed
 
-Seaborn, Matplotlib
+### Data Cleaning:
 
-Scikit-learn (sklearn)
+- Removed missing values.
+- Handled outliers in fare_amount and distance.
+- Filtered invalid latitude and longitude values.
 
-🔥 Key Steps Performed
-Data Cleaning:
+### Feature Engineering:
 
-Removed missing values.
+- Extracted useful time-based features (e.g., hour, day of the week).
+- Calculated distance between pickup and drop-off using Haversine formula.
+- Applied log transformation to normalize skewed features (fare_amount, distance).
 
-Handled outliers in fare_amount and distance.
+### Exploratory Data Analysis (EDA):
 
-Filtered invalid latitude and longitude values.
+- Visualized the distributions of key features.
+- Checked correlations between variables.
 
-Feature Engineering:
+### Model Building:
 
-Extracted useful time-based features (e.g., hour, day of the week).
+- Built regression models to predict cab fare.
+- Tried different algorithms (Linear Regression, Decision Tree, Random Forest, etc.).
+- Tuned hyperparameters for better model performance.
 
-Calculated distance between pickup and drop-off using Haversine formula.
+### Evaluation:
 
-Applied log transformation to normalize skewed features (fare_amount, distance).
+- Used metrics like RMSE (Root Mean Squared Error) and R² Score.
+- Compared different models to select the best one.
 
-Exploratory Data Analysis (EDA):
+  ---
 
-Visualized the distributions of key features.
+## 🛠️ How to Run the Project
 
-Checked correlations between variables.
-
-Model Building:
-
-Built regression models to predict cab fare.
-
-Tried different algorithms (Linear Regression, Decision Tree, Random Forest, etc.).
-
-Tuned hyperparameters for better model performance.
-
-Evaluation:
-
-Used metrics like RMSE (Root Mean Squared Error) and R² Score.
-
-Compared different models to select the best one.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/HR-VijayKumar/car_fare_prediction.git
+   cd car_fare_prediction
